@@ -9,12 +9,11 @@ spring:
     password: toor
     url: jdbc:postgresql://localhost:5432/fraud?createDatabaseIfNotExist=true
     username: toor
-
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: "true" # Mettre en citation pour que ce soit interprété comme une chaîne
-    show-sql: true # Déplacement de show-sql dans la section properties
+        format_sql: "true" 
+      show_sql: true 

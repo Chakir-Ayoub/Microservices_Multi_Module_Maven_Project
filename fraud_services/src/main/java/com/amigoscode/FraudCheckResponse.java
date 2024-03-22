@@ -1,5 +1,5 @@
 package com.amigoscode;
 
-public record FraudCheckResponse() {
+public record FraudCheckResponse(boolean isFraudster) {
 
 }
