@@ -60,7 +60,16 @@
 		<artifactId>postgresql</artifactId>
 		<scope>runtime</scope>
 	</dependency>
-
+      <dependency>
+          <groupId>org.springframework.cloud</groupId>
+          <artifactId>spring-cloud-starter-openfeign</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.amigoscode</groupId>
+          <artifactId>clients</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+          <scope>compile</scope>
+      </dependency>
 
 
   </dependencies>
@@ -80,5 +89,7 @@
   	<module>Customer_Services</module>
   	<module>fraud_services</module>
     <module>eureka_service</module>
+      <module>clients</module>
+      <module>notification</module>
   </modules>
 </project>
