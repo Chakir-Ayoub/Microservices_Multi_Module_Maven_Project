@@ -3,8 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Customer_Services/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Customer_Services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka_service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka_service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fraud_services/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fraud_services/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server_eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

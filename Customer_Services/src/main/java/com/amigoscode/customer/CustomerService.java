@@ -24,7 +24,7 @@ public class CustomerService {
 		customer.setLastName(customerRequest.getLastname());
 		customer.setEmail(customerRequest.getEmail());
 		customerRepository.saveAndFlush(customer);
-		FraudCheckResponse fraudCheckResponse= restTemplate.getForObject("http://localhost:8081/api/v1/fraud-check/{customerid}",
+		FraudCheckResponse fraudCheckResponse= restTemplate.getForObject("http://FRAUD/api/v1/fraud-check/{customerid}",
 				FraudCheckResponse.class,
 				customer.getId());
 

@@ -13,10 +13,12 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <spring-boot-maven-plugin.version>2.5.7</spring-boot-maven-plugin.version>
     <spring.boot.dependencies.version>2.5.7</spring.boot.dependencies.version>
+	<spring-cloud.version>2020.0.3</spring-cloud.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
@@ -24,6 +26,15 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
+      
+      		<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+      
     </dependencies>
   </dependencyManagement>
 
@@ -49,7 +60,8 @@
 		<artifactId>postgresql</artifactId>
 		<scope>runtime</scope>
 	</dependency>
-	
+
+
 
   </dependencies>
 
@@ -67,6 +79,6 @@
   <modules>
   	<module>Customer_Services</module>
   	<module>fraud_services</module>
-  	<module>test</module>
+    <module>eureka_service</module>
   </modules>
 </project>
