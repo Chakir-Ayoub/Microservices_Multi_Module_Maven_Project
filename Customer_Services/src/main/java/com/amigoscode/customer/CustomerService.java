@@ -28,7 +28,8 @@ public class CustomerService {
 
 		  if(fraudCheckResponse.isFraudster()) { throw new
 		  IllegalStateException("Fraudster"); }
-notificationClient.sendNotification(
+
+		notificationClient.sendNotification(
 		new NotificationRequest(
 				customer.getId(),
 				customer.getEmail(),
