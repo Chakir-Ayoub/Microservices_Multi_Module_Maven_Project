@@ -6,7 +6,8 @@ spring:
     name: eureka-server
 server:
   port: 8761
-
+  zipkin:
+    base-url: http://192.168.26.5:9411
 eureka:
   client:
     fetch-registry: false
