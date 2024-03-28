@@ -1,4 +1,4 @@
-package com.amigoscode;
+package com.notification;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

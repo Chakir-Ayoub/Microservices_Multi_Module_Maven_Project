@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: notification
+
+
   datasource:
     password: toor
     url: jdbc:postgresql://localhost:5432/notification?createDatabaseIfNotExist=true
@@ -17,6 +19,10 @@ spring:
     show-sql: true
   zipkin:
     base-url: http://192.168.26.5:9411
+  rabbitmq:
+    addresses: 192.168.26.5:5672
+
+
     eureka:
       client:
         service-url:
@@ -24,3 +30,12 @@ spring:
         fetch-registry: true
         register-with-eureka: true
         enabled: true
+rabbitmq:
+  exchanges:
+    internal: internal.exchange
+  queues:
+    notification: notification.queue
+  routing-keys:
+    internal-notification: internal.notification.routing-key
+
+

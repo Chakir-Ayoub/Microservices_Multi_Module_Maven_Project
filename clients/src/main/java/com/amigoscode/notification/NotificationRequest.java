@@ -1,8 +1,10 @@
 package com.amigoscode.notification;
 
-public record NotificationRequest(
+
+import java.io.Serializable;
+public record NotificationRequest (
         Integer toCustomerId,
         String toCustomerName,
         String message
-) {
+) implements Serializable {
 }

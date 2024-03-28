@@ -1,8 +1,9 @@
-package com.amigoscode;
+package com.notification;
 
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 @Entity
 @Builder
@@ -11,7 +12,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @ToString
-public class Notification {
+public class Notification implements Serializable {
 
     @Id
     @SequenceGenerator(
