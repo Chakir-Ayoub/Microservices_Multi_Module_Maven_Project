@@ -1,0 +1,5 @@
+com\amigoscode\FraudCheckResponse.class
+com\amigoscode\Main.class
+com\amigoscode\FraudClient.class
+com\amigoscode\notification\NotificationRequest.class
+com\amigoscode\notification\NotificationClient.class
