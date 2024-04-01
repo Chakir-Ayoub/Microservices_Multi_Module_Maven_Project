@@ -8,15 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="notification" />
         <module name="apigw" />
-        <module name="eureka_service" />
         <module name="clients" />
+        <module name="eureka_service" />
         <module name="amqp" />
         <module name="customer_services" />
         <module name="fraud_services" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="eureka-server" target="17" />
+      <module name="eureka_server" target="17" />
       <module name="server_eureka" target="17" />
     </bytecodeTargetLevel>
   </component>
