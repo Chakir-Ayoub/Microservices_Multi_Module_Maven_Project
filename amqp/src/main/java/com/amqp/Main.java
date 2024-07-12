@@ -16,16 +16,17 @@ public class Main {
     private final ConnectionFactory connectionFactory;
 
     @Bean
-    public AmqpTemplate amqpTemplate() {
-        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+    public AmqpTemplate amqpTemplate(){
+        RabbitTemplate rabbitTemplate=new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMessageConverter(jacksonConverter());
         return rabbitTemplate;
     }
 
     @Bean
-    public SimpleRabbitListenerContainerFactory simpleRabbitListenerContainerFactory() {
-        SimpleRabbitListenerContainerFactory factory =
+    public SimpleRabbitListenerContainerFactory simpleRabbitListenerContainerFactory(){
+        SimpleRabbitListenerContainerFactory factory=
                 new SimpleRabbitListenerContainerFactory();
+
         factory.setConnectionFactory(connectionFactory);
         factory.setMessageConverter(jacksonConverter());
         return factory;
